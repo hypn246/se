@@ -1,0 +1,17 @@
+{%extends 'layout/base.html'%}
+{%block title%}Thong Tin Chi Tiet{%endblock%}
+
+{%block content%}
+
+<div class="row mt-3 flex flex-row">
+    <div class="col-md-5 col-12">
+        <img src="{{prod.image}}" alt="" width="300px">
+    </div>
+    <div class="col-md-7 col-12">
+        <h1 class="text-info">{{prod.name}}</h1>
+        <h2 class="text-danger">{{ "{:,.0f}".format(prod.price)}}</h2>
+    </div>
+</div>
+
+
+{%endblock%}
